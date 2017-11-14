@@ -7,7 +7,8 @@
     android:gravity="center"
     tools:context="com.example.user.attendance_tension.MainActivity"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="@drawable/atten">
 
     <EditText
         android:id="@+id/editText"
@@ -16,6 +17,7 @@
         android:layout_margin="40dp"
         android:layout_weight="0.10"
         android:ems="10"
+        android:textColor="@color/white"
         android:inputType="textPersonName" />
 
     <Button

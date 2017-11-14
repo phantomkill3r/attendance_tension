@@ -9,14 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".StartApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ViewTimeTable"></activity>
+        <activity android:name=".MainActivity"></activity>
+
         <activity android:name=".Activity2"></activity>
+        <service android:name=".TheService"
+            android:exported="false"></service>
+        <receiver android:name=".Notification_reciever"></receiver>
+        <receiver android:name=".Counter"></receiver>
+
     </application>
 
 </manifest>

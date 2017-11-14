@@ -6,33 +6,49 @@
     android:layout_height="match_parent"
     tools:context="com.example.user.attendance_tension.Activity2"
     android:weightSum="1"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/atten">
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="47dp"
+        android:layout_weight="0.04"
+        android:background="@color/white"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="16dp"
-        android:layout_weight="0.04" />
-
-    <Spinner
-        android:id="@+id/spinner4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.11" />
+        tools:layout_editor_absoluteY="16dp" />
 
     <Spinner
         android:id="@+id/spinner5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.11" />
+        android:layout_height="46dp"
+        android:background="@color/white" />
 
-    <Button
-        android:id="@+id/button"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.09"
-        android:text="Button" />
+        android:orientation="horizontal"
+        android:weightSum="1">
 
+        <Button
+            android:id="@+id/ins_butt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert Entry" />
+
+        <Button
+            android:id="@+id/next2_butt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="160dp"
+            android:text="Notify me"
+            android:layout_weight="0.34" />
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/timePicker3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04" />
 </LinearLayout>
